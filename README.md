@@ -23,3 +23,16 @@
 只调整网络优先顺序，不会更换 Wi-Fi。记得先连好网络——它负责排队，不负责变出网线。
 
 > 首次打开若被拦截：确认下载来源后，到「系统设置 → 隐私与安全性」按提示选择「仍要打开」。应用使用个人证书签名，暂未公证。
+
+## 开发运行
+
+在 Mac 上安装 Xcode 或 Command Line Tools（Swift 6+），然后在终端运行：
+
+```sh
+git clone https://github.com/zhengsaihong/network-priority.git
+cd network-priority
+OUTPUT_DIR="$PWD/.build/app" zsh build.sh
+open ".build/app/网络优先级.app"
+```
+
+界面和网络逻辑在 `main.swift`，图标在 `assets/`。修改后先退出 App，再运行最后两条命令即可。生成的 App 在项目的 `.build/app/` 文件夹里。

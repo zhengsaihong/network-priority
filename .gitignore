@@ -1,0 +1,9 @@
+.DS_Store
+.build/
+dist/
+assets/AppIcon.iconset/
+*.p12
+*.pfx
+*.mobileprovision
+*.provisionprofile
+.env
